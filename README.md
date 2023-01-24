@@ -1,11 +1,7 @@
 # Arquiteturas  
 
-Exemplos de arquiteturas MVC e Hexagonal.   
-Ambas as arquiteturas possuem 3 camadas.   
+Neste repositório você encontrará alguns exemplos de arquiteturas de projetos e como podem ser estruturados, como:  
 
-MVC: Model, View e Controller   
-Hexagonal: Application, Domain e Framework   
-
-
-
-
+- [Hexagonal](https://github.com/JulianeMaran32/arquitetura/tree/master/hexagonal)  
+- [Monolito](https://github.com/JulianeMaran32/arquitetura/tree/master/monolito)  
+- [MVC](https://github.com/JulianeMaran32/arquitetura/tree/master/mvc)  
