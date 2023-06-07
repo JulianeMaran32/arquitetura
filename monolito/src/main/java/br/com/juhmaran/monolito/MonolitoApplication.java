@@ -1,4 +1,4 @@
-package br.com.arquitetura.monolito;
+package br.com.juhmaran.monolito;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

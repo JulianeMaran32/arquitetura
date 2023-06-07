@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /v1
+#    encoding:
+#      charset: UTF-8
+#      enabled: true
+
+spring:
+  application:
+    name: monolito
+  datasource:
+    url: jdbc:mysql://localhost:3306/monolito?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  devtools:
+    add-properties: true
+    remote:
+      restart:
+        enabled: true
+
+springdoc:
+  api-docs:
+    path: /api-docs
+    version: openapi_3_0
+  swagger-ui:
+    path: /swagger-ui.html
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+
+logging:
+  level:
+    web: debug
+    org.springframework.security.web.FilterChainProxy: DEBUG

@@ -1,0 +1,8 @@
+### actuator
+GET http://localhost:8080/v1/actuator
+
+### health
+GET http://localhost:8080/v1/actuator/health
+
+### health-path
+GET http://localhost:8080/v1/actuator/health/{*path}

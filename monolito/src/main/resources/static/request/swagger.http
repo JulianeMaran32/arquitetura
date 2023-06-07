@@ -1,0 +1,7 @@
+### api-docs
+GET http://localhost:8080/v1/api-docs
+Content-Type: application/json
+
+### swagger-ui
+GET http://localhost:8080/v1/swagger-ui.html
+Content-Type: application/json
