@@ -1,0 +1,5 @@
+### swagger api-docs
+GET http://localhost:8080/v1/api-docs
+
+### swagger swagger-ui
+GET http://localhost:8080/v1/swagger-ui/index.html

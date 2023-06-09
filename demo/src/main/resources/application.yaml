@@ -1,12 +1,66 @@
 server:
-  port: 8081
+  port: 8080
   servlet:
     context-path: /v1
 
 spring:
   application:
     name: demo
+  # Database JDBC and MySQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/database_name?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: root
+  # JPA and Hibernate
+  jpa:
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  # DevTools
+  devtools:
+    add-properties: true
+    remote:
+      restart:
+        enabled: true
 
+# Swagger - Springdoc
+springdoc:
+  api-docs:
+    path: /api-docs
+    version: openapi_3_0
+  swagger-ui:
+    path: /swagger-ui.html
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        # Endpoints to include by name or wildcard
+        include: "*"
+        # Endpoints to exclude by name or wildcard
+        exclude: beans,mapping
+      # Base path for actuator endpoints
+      base-path: "/admin-actuator"
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: My Actuator App
+    description: Actuator App
+    version: 1.0.0
+
+# LOG
 logging:
   level:
-    web: debug
+    web: DEBUG
+    org.springframework.security.web.FilterChainProxy: DEBUG

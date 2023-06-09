@@ -1,3 +1,3 @@
 ### GET demo
-GET http://localhost:8081/v1
+GET http://localhost:8080/v1/demo
 Content-Type: application/json

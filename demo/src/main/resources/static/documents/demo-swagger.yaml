@@ -1,9 +1,12 @@
 openapi: 3.0.3
 info:
-  title: Title
-  description: Title
+  title: Demo
+  description: Application Demo
   version: 1.0.0
 servers:
   - url: 'http://localhost:8080/v1'
 paths:
+  /demo:
+
+
   

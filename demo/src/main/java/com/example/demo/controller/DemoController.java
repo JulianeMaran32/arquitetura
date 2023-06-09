@@ -2,7 +2,6 @@ package com.example.demo.controller;
 
 import com.example.demo.domain.model.DemoModel;
 import com.example.demo.service.DemoService;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
  * NÃO há tratamento de exceções e nem lógica > é responsabilidade do service
  */
 @RestController
-@RequestMapping
+@RequestMapping("/demo")
 public class DemoController {
 
     private final DemoService demoService;

@@ -12,4 +12,4 @@ CREATE TABLE `users`
 
 USE `monolito`;
 INSERT INTO `users` (name, email, password)
-VALUES ('Juliane', 'julianemaran@gmail.com', '123456');
+VALUES ('Juliane', 'exemplo@email.com', '123456');
